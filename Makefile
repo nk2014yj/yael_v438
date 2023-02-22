@@ -5,7 +5,7 @@ include makefile.inc
 CC=gcc 
 
 
-ALLDIRS=yael progs
+ALLDIRS=yael #progs
 
 all: $(addprefix compiledir.,$(ALLDIRS)) 
 
