@@ -544,19 +544,19 @@ nnlist_t * kmlsh_ann_fvec (const float * vb, int nb,
 /*--------------------------------------------------------------*/
 /* Various Input/Output functions                               */
 
-#define KMLSH_WRITE_ERROR(test) {if (!test) {  \
+#define KMLSH_WRITE_ERROR(test) {if (!(test)) {  \
   fprintf (stderr, "# kmlsh_write: I/O error with file %s\n", filename); \
   exit (1); }}								
 
-#define KMLSH_READ_ERROR(test) {if (!test) {  \
+#define KMLSH_READ_ERROR(test) {if (!(test)) {  \
   fprintf (stderr, "# kmlsh_read: I/O error with file %s\n", filename); \
   exit (1); }}
   
-#define KMLSH_IDX_WRITE_ERROR(test) {if (!test) {  \
+#define KMLSH_IDX_WRITE_ERROR(test) {if (!(test)) {  \
   fprintf (stderr, "# kmlsh_idx_write: I/O error with file %s\n", filename); \
   exit (1); }}								
 
-#define KMLSH_IDX_READ_ERROR(test) {if (!test) {  \
+#define KMLSH_IDX_READ_ERROR(test) {if (!(test)) {  \
   fprintf (stderr, "# kmlsh_idx_read: I/O error with file %s\n", filename); \
   exit (1); }}
   
